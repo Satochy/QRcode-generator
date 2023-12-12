@@ -1,6 +1,6 @@
 import qrcode
 
-data = 'Cole seu conteúdo aqui'
+img = qrcode.make('https://github.com/Satochy') # link que será o qrcode
 
-img = qrcode.make(data)
-img.save('E:/QRcode Generator/myqrcode.png')
+type(img)
+img.save("myqrcode.png") # nome do imagem .png com o qr code
